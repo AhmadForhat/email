@@ -2,7 +2,6 @@ const { dateHourFormatterUTC3 } = require('../utils/dateHourFormatterUTC3')
 const nodemailer = require('nodemailer')
 
 const enviarEmail = ( body ) => {
-    console.log(body.userEmail)
     const transporter = nodemailer.createTransport({
         service: 'gmail',
         auth:{
